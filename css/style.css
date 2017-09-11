@@ -1,0 +1,256 @@
+* {
+  box-sizing:border-box
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Karla', sans-serif;
+}
+main{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+nav li{
+  margin-right: 10px;
+}
+nav .container-fluid > ul{
+  margin-right: 0;
+}
+
+nav > .container-fluid{
+  padding-right: 0;
+}
+
+.mySlides {
+  display:none
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1240px;
+  max-height: 960px;
+  position: relative;
+  margin: auto;
+  border: collapse;
+}
+
+.slideshow-container .ddot{
+  padding: 10px 0 10px 0;
+  margin: 10px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+}
+
+hr{
+  display: block;
+  clear: both;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/*image slideshow height/width*/
+img[alt*="fade"]{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*dot container to center*/
+.ddot{
+  text-align:center
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+/*banner css*/
+img[alt*="banner"]{
+  width: 960px;
+  height:  300px;
+
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+footer,
+footer p{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  margin: 0;
+  clear: both;
+}
+
+/*Featured post*/
+main .glyphicon-book{
+  padding-right: 5px;
+}
+
+.featuredpost{
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  position: relative;
+
+}
+.featuredpost .fpost{
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  /*padding: 10px;*/
+}
+.fpost a{
+  color: #ff751a;
+
+}
+.fpost h3{
+  margin: 0;
+}
+
+/*index-stats.html*/
+
+
+
+/*bitcoin widget chart*/
+main{
+  width: 100%;
+  height: 960px;
+}
+
+/*social media footer*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook, 
+.fa-facebook:visited 
+{
+    background: #000;
+    color: #0000ff;
+}
+.fa-twitter,
+.fa-twitter:visited {
+    background: #000;
+    color: #87ceeb;
+}
+.fa-google-plus,
+.fa-google-plus:visited {
+    background: #000;
+    color: #ff0000;
+}
+.fa-facebook:hover {
+    background: #3333ff;
+    color: #0000ff;
+}
+.fa-twitter:hover {
+    background: #66c1e5;
+    color: #87ceeb;
+}
+.fa-google-plus:hover {
+    background: #ff1a1a;
+    color: #ff0000;
+}
+
+/*price widget*/
+
+main .one{
+  width: 100%;
+  color: red;
+  height: 960px;
+  background-color: blue;
+}
+main .two{
+  width: 100%;
+  height: 960px;
+  background-color: red;
+}
+main .three{
+  width: 100%;
+  height: 960px;
+  background-color: skyblue;
+}
+main .four{
+  width: 100%;
+  height: 960px;
+  background-color: violet;
+}
+
+/*featured post animation*/
+.clear:after{
+  content: ""; /*null*/
+  clear: both;
+  display: block;
+
+}
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
