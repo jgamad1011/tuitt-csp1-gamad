@@ -7,19 +7,39 @@
 body {
   font-family: 'Karla', sans-serif;
   background-color: #eee;
-  height: 100%;
-  /*min-height: 960px;*/
+  
+  min-height: 960px;
+  width: 100%;
 
 
 }
+html,
+body
+{
+    width: 100%;
+    /*height: 100%;*/
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.mpbzero{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.home{
+  margin: 0 auto;
+}
 main{
-  max-width: 1080px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: #fff;
   margin-bottom: 20px;
   /*display: block;*/
   box-shadow: 10px 10px 5px grey;
-  /*min-height: 960px;*/
+  min-height: 960px;
   /*max-height: 1080px;*/
   height: 100%;
 }
@@ -30,6 +50,10 @@ main{
 .imgshadow{
   box-shadow: 5px 5px 5px grey;
 
+}
+
+.img-align{
+  margin: auto;
 }
 .img-size{
   width: 200px;
@@ -48,6 +72,32 @@ main{
 .margin-rgt{
   margin-right: 20px;
 }
+.margin-lft{
+  margin-left: 20px;
+}
+
+.margin-tp{
+  margin-top: 20px;
+}
+
+.gmap{
+  border: 1px solid #000;
+  overflow:hidden;
+  height:440px;
+  width:600px;
+}
+
+#gmap_canvas{
+  height: 440px;
+  width: 600px;
+  border: 1px solid black;
+}
+#gmap_canvas img {
+  max-width:none!important;
+  background:none!important;
+}
+
+
 
 .padding{
 padding: 20px;
@@ -118,7 +168,7 @@ hr{
 /*landing page css*/
 #landingcontainer1{
 width: 100%;
-height: 100px;
+height: 100%;
 background-color: white;
 }
 #landing1{
@@ -129,6 +179,14 @@ text-align: center;
 }
 #landingmargin{
   margin: 50px 0;
+
+}
+#landingmargin1{
+  margin: 50px 0;  
+}
+#landingmargin2{
+  /*margin: 50px 0;*/
+  color: #000;  
 }
 
 .one{
@@ -209,6 +267,9 @@ footer{
    width:100%;
    height:70px;   /* Height of the footer */
 }
+
+
+
 .wrapper{
   position: relative;
 }
@@ -278,7 +339,7 @@ main .glyphicon-book{
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 30%;
+    width: 30px;
     text-align: center;
     text-decoration: none;
 }
@@ -360,6 +421,7 @@ main .four{
 
     margin-top: 0;
     /* The image used */
+    background: rgba(0,0,0,0.1);
     background-image: url("../images/office1.jpg");
 
     /* Set a specific height */
@@ -370,6 +432,8 @@ main .four{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+   
+
     color: white;
 }
 .parallax1 { 
