@@ -3,12 +3,51 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Karla', sans-serif;
+  background-color: #eee;
+  /*height: 100%;*/
+  min-height: 960px;
+
+
 }
 main{
   max-width: 1080px;
   margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 20px;
+  /*display: block;*/
+  box-shadow: 10px 10px 5px grey;
+  min-height: 960px;
+  /*height: 100%;*/
+}
+/*.whitecontainer{
+  background-color: #fff;
+  box-shadow: 10px 10px 5px grey;
+}*/
+.imgshadow{
+  box-shadow: 5px 5px 5px grey;
+
+}
+.img-size{
+  width: 200px;
+  height: 200px;
+}
+
+
+.margin-btm{
+  margin-bottom: 20px;
+}
+.margin-rgt{
+  margin-right: 20px;
+}
+
+aside{
+  padding-top: 30px;
+}
+.btm{
+  margin-bottom: 10px;
 }
 
 nav li{
@@ -20,6 +59,10 @@ nav .container-fluid > ul{
 
 nav > .container-fluid{
   padding-right: 0;
+}
+
+#navindex{
+  margin: 0;
 }
 
 .mySlides {
@@ -117,6 +160,10 @@ img[alt*="banner"]{
   from {opacity: .4} 
   to {opacity: 1}
 }
+footer{
+  /*position: fixed;*/
+  /*bottom: 0;*/
+}
 
 footer,
 footer p{
@@ -127,6 +174,8 @@ footer p{
   line-height: 70px;
   margin: 0;
   clear: both;
+  /*position: relative;*/
+  bottom: 0;
 }
 
 /*Featured post*/
@@ -167,10 +216,10 @@ main .glyphicon-book{
 
 
 /*bitcoin widget chart*/
-main{
+/*main{
   width: 100%;
   height: 960px;
-}
+}*/
 
 /*social media footer*/
 .fa {
@@ -236,12 +285,52 @@ main .four{
   background-color: violet;
 }
 
-/*featured post animation*/
+
 .clear:after{
   content: ""; /*null*/
   clear: both;
   display: block;
 
+}
+.margin-tb{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.parallax h2{
+  margin: 0;
+}
+
+/*paralllax*/
+.parallax { 
+
+    margin-top: 0;
+    /* The image used */
+    background-image: url("../images/office1.jpg");
+
+    /* Set a specific height */
+    height: 960px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.parallax1 { 
+    /* The image used */
+    background-image: url("../images/office2.jpg");
+
+    /* Set a specific height */
+    height: 100px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -250,7 +339,9 @@ main .four{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {
+    font-size: 11px
+  }
 }
 
 
