@@ -98,7 +98,7 @@ main{
 }
 
 .landingmarginblack{
-  color: #000;
+  color: #fff;
 }
 
 
@@ -198,7 +198,7 @@ text-align: center;
 }
 #landingmargin2{
   margin: 100px 0;
-  color: #000;  
+  color: #fff;  
 }
 
 .one{
@@ -435,7 +435,8 @@ main .four{
     margin-top: 0;
     /* The image used */
     background: rgba(0,0,0,0.1);
-    background-image: url("../images/office1.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/office1.jpg" );
+    /*filter:brightness(70%); */
 
     /* Set a specific height */
     height: 100%; 
