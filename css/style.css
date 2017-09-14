@@ -469,9 +469,30 @@ main .four{
 
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .text {
     font-size: 11px
+  }
+  .featuredimg{
+    padding-top: 0;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    width: 150px
+  }
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .text {
+    font-size: 12px
+  }
+  .featuredimg{
+    padding-top: 0;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    width: 150px
+  }
   }
 }
 
