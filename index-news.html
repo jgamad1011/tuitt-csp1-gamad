@@ -37,15 +37,14 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
           <ul class="dropdown-menu">
            <li><a href="./index-stats.html">Statistics</a></li> 
-           <li class="active"><a href="./index-calculator.html">Calculator</a></li>
+           <li><a href="./index-calculator.html">Calculator</a></li>
            
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Bitcoins! <span class="caret"></span></a>
           <ul class="dropdown-menu">
-           <li class="active"><a href="./index-exchanger.html">Exchanger</a></li> 
-           <li><a href="#">Free Bitcoins</a></li>
+           <li><a href="./index-exchanger.html">Exchanger</a></li> 
            
           </ul>
         </li>
@@ -274,22 +273,23 @@
 
 	
 		<aside  class="container col-xs-12 col-md-4 col-lg-4">		
-			<script type="text/javascript">
-			baseUrl = "https://widgets.cryptocompare.com/";
-			var scripts = document.getElementsByTagName("script");
-			var embedder = scripts[ scripts.length - 1 ];
-			(function (){
-			var appName = encodeURIComponent(window.location.hostname);
-			if(appName==""){appName="local";}
-			var s = document.createElement("script");
-			s.type = "text/javascript";
-			s.async = true;
-			var theUrl = baseUrl+'serve/v1/coin/tiles?fsym=BTC&tsyms=USD,PHP,EUR,GBP,JPY,AUD,SGD,HKD';
-			s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-			embedder.parentNode.appendChild(s);
-			})();
-			</script>
-			<span class="container"><img src="http://placehold.it/200x500"></span>
+			<span><script type="text/javascript">
+				baseUrl = "https://widgets.cryptocompare.com/";
+				var scripts = document.getElementsByTagName("script");
+				var embedder = scripts[ scripts.length - 1 ];
+				(function (){
+				var appName = encodeURIComponent(window.location.hostname);
+				if(appName==""){appName="local";}
+				var s = document.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				var theUrl = baseUrl+'serve/v1/coin/tiles?fsym=BTC&tsyms=USD,PHP,EUR,GBP,JPY,AUD,SGD,HKD';
+				s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;embedder.parentNode.appendChild(s);})();</script>
+			</span>
+			<span class="container">
+				<img src="http://placehold.it/200x500">
+				<figure>Ads</figure>
+			</span>
 
 		</aside> <!-- /.col-xs-12 col-md-4 col-lg-4 -->
 	</div> <!-- /.row -->
