@@ -480,6 +480,10 @@ main .four{
     height: 150px;
     width: 150px
   }
+  .img-size{
+    display: inline-block;
+    clear: both;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -493,6 +497,7 @@ main .four{
     height: 150px;
     width: 150px
   }
+
   }
 }
 
